@@ -1,4 +1,4 @@
-![portada frontend mentor](sources/logo.png)
+![website logo](logo.png)
 
 
 <h1 align= "center">Frontend Mentor Challenges</h1>
