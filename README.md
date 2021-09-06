@@ -1,20 +1,17 @@
-![website logo](logo.png)
-
-
-<h1 align= "center">Frontend Mentor Challenges</h1>
-
-<div align="center">
+<div align="center"> 
+    <image align="center" height="50px" src="https://www.frontendmentor.io/static/images/logo-desktop.svg" alt="frontend mentor logo" >
+</div>
+   
+<div>
+<h3 align= "center">👩🏻‍💻 Here you can find solutions to the projects I've done @Frontend Mentor 👩🏻‍💻</h3>
+    <div align="center">
     <p>    
     <a href="https://www.frontendmentor.io/challenges">
       Frontend Mentor Challenges
-    </a></span>
+    </a>
      help you improve your coding skills by building realistic projects.
     </p>
 </div>
-
-<div>
-<h2 align= "center">My solutions</h2>
-<p align= "center">*Updated every time I finished a challenge.</p>
 </div>
 
 ## Table of Contents
@@ -24,22 +21,12 @@
 
 ---
 
-
-
-
-# frontend-solutions
 👩🏻‍💻 Here you can find solutions to the projects I've done @Frontend Mentor
-
-#### Newbie
-
-Built with HTML, CSS and Javascript depends on the challenge.  
-
-- [Order Summary](//link for the repository)
-
----
-### Junior
-
 
 <div align="right">
     karina4840 / 2021
 </div>
+
+    
+    # <h4>Newbie</h4>
+    
