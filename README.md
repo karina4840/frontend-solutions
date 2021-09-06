@@ -19,14 +19,15 @@
 - [Junior](#junior)  
 - [Contact](#contact)
 
----
+# <h4>Newbie
+<p> Tech used: HTML, CSS and Javascript (varies from challenge to challenge). </p>
+- [Order Summary](link)
 
-👩🏻‍💻 Here you can find solutions to the projects I've done @Frontend Mentor
-
-<div align="right">
-    karina4840 / 2021
+    
+    
+    
+    
+    
+<div align="center">
+    2021 | <a href="https://github.com/karina4840"> karina4840 </a>
 </div>
-
-    
-    # <h4>Newbie</h4>
-    
