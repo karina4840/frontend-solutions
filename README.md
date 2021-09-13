@@ -21,7 +21,7 @@
 
 # <h4>Newbie
 <p> Tech used: HTML, CSS and Javascript (varies from challenge to challenge). </p>
-- [Order Summary](link)
+    - <a href="https://github.com/karina4840/order-summary"> Order Summary </a>
 
     
     
