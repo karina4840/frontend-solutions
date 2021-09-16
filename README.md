@@ -22,8 +22,8 @@
 <p> Tech used: HTML, SASS and Javascript (varies from challenge to challenge). </p>
     <ul>
         <li><a href="https://github.com/karina4840/order-summary"> Order Summary </a></li>
-        <li><a href="#"> Stats Preview Card Component </a></li>
-        <li><a href="#"> Single Price Grid Component </a> </li>
+        <li><a href=""> Stats Preview Card Component </a></li>
+        <li><a href="https://github.com/karina4840/single-price-grid-component"> Single Price Grid Component </a> </li>
     </ul>
 <hr>
  
