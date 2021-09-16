@@ -20,7 +20,7 @@
 - [Contact](#contact)
 
 # <h4>Newbie
-<p> Tech used: HTML, CSS and Javascript (varies from challenge to challenge). </p>
+<p> Tech used: HTML, SASS and Javascript (varies from challenge to challenge). </p>
     - <a href="https://github.com/karina4840/order-summary"> Order Summary </a>
 
     
