@@ -25,8 +25,16 @@
         <li><a href="https://github.com/karina4840/stats-preview-card-component"> Stats Preview Card Component </a></li>
         <li><a href="https://github.com/karina4840/single-price-grid-component"> Single Price Grid Component </a> </li>
     </ul>
-<hr>
- 
+
+# <h3>Junior
+<p> Tech used: HTML, SASS and Javascript (varies from challenge to challenge). </p>
+    <ul>
+        <li><a href="https://github.com/karina4840/tip-calculator"> Tip Calculator </a></li>
+    </ul>
+
+  
+    
 <div align="center">
     2021 | <a href="https://github.com/karina4840"> karina4840 </a>
 </div>
+
