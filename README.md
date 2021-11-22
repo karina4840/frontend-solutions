@@ -8,6 +8,7 @@
             <p>    
             <a href="https://www.frontendmentor.io/challenges">Frontend Mentor Challenges </a> help you improve your coding skills by building realistic projects.
             </p>
+            <p> Tech used: HTML, SASS and Javascript (varies from challenge to challenge). </p>
         </div>
 </div>
 <hr>
@@ -19,18 +20,17 @@
     
     
 # <h3>Newbie
-<p> Tech used: HTML, SASS and Javascript (varies from challenge to challenge). </p>
-    <ul>
-        <li><a href="https://github.com/karina4840/order-summary"> Order Summary </a></li>
-        <li><a href="https://github.com/karina4840/stats-preview-card-component"> Stats Preview Card Component </a></li>
-        <li><a href="https://github.com/karina4840/single-price-grid-component"> Single Price Grid Component </a> </li>
-    </ul>
+
+<ul>
+    <li><a href="https://github.com/karina4840/order-summary"> Order Summary </a></li>
+    <li><a href="https://github.com/karina4840/stats-preview-card-component"> Stats Preview Card Component </a></li>
+    <li><a href="https://github.com/karina4840/single-price-grid-component"> Single Price Grid Component </a> </li>
+</ul>
 
 # <h3>Junior
-<p> Tech used: HTML, SASS and Javascript (varies from challenge to challenge). </p>
-    <ul>
-        <li><a href="https://github.com/karina4840/tip-calculator"> Tip Calculator </a></li>
-    </ul>
+<ul>
+    <li><a href="https://github.com/karina4840/tip-calculator"> Tip Calculator </a></li>
+</ul>
 
   
     
