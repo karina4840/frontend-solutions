@@ -25,6 +25,7 @@
     <li><a href="https://github.com/karina4840/order-summary"> Order Summary </a></li>
     <li><a href="https://github.com/karina4840/stats-preview-card-component"> Stats Preview Card Component </a></li>
     <li><a href="https://github.com/karina4840/single-price-grid-component"> Single Price Grid Component </a> </li>
+    <li><a href="https://github.com/karina4840/single-price-grid-component"> Article Preview Component Challenge </a> </li>
 </ul>
 
 # <h3>Junior
