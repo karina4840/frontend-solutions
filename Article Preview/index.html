@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/93eee2ba8c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./sass/style.css">
+
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card-container">
+    <div class="picture-section">
+      <img class="drawers" src="./images/drawers.jpg" alt="picture of drawers">
+    </div>
+
+    <div class="comment-section">
+
+      <p class="text-primary">
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </p>
+      <p class="text-secondary">
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+      </p>
+
+      <div class="pic-name-share">
+        <img class="avatar" src="./images/avatar-michelle.jpg" alt="avatar of Michele">
+        
+        <div class="name-date">
+          <p class="name">Michelle Appleton</p>
+          <p class="date">28 Jun 2020</p>
+        </div>
+
+        <div class="share-button dark-bg">
+          <img class="share icon-hidden dark" src="./images/icon-share.svg" alt="share button">
+          <img class="share icon-hidden white" src="./images/icon-share-white.svg" alt="share button">
+        </div>
+
+        
+      </div>
+      
+      <div class="share-popup-small hidden-small">
+        <div class="share-container">
+          <p class="share-text">share</p>
+          
+          <div class="share-logos">
+            <img class="share-logo" src="./images/icon-facebook.svg" alt="facebook logo">
+            <img class="share-logo" src="./images/icon-twitter.svg" alt="twitter logo">
+            <img class="share-logo" src="./images/icon-pinterest.svg" alt="pinterest logo">
+          </div>
+
+          <div class="share-button-popup">
+            <img class="button" src="./images/icon-share-white.svg"; alt="share button">
+          </div>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="share-popup-big hidden-big">
+
+    <div class="share-container-big">
+      <div class="row-container">
+        <p class="share-text-big">share</p>
+
+        <div class="share-logos-big">
+          <img class="share-logo-big" src="./images/icon-facebook.svg" alt="facebook logo">
+          <img class="share-logo-big" src="./images/icon-twitter.svg" alt="twitter logo">
+          <img class="share-logo-big" src="./images/icon-pinterest.svg" alt="pinterest logo">
+        </div>
+
+      </div>
+
+      <div class="triangle-down"></div>
+
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/karina4840" target="blank_" >Karina I</a>.
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+}
+
+body .card {
+  width: 85%;
+  margin: 15% auto;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  overflow: hidden;
+}
+
+body .card .description, body .card .monthly-payment, body .card .why-us {
+  padding: 20px 25px;
+  width: auto;
+}
+
+body .card .description .head-title, body .card .description .text-primary, body .card .description .text-secondary, body .card .monthly-payment .head-title, body .card .monthly-payment .text-primary, body .card .monthly-payment .text-secondary, body .card .why-us .head-title, body .card .why-us .text-primary, body .card .why-us .text-secondary {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+body .card .description .head-title, body .card .monthly-payment .head-title, body .card .why-us .head-title {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+body .card .description .text-primary, body .card .monthly-payment .text-primary, body .card .why-us .text-primary {
+  font-size: 15px;
+}
+
+body .card .description .text-secondary, body .card .monthly-payment .text-secondary, body .card .why-us .text-secondary {
+  font-size: 13px;
+}
+
+body .card .description {
+  background-color: white;
+}
+
+body .card .description .head-title {
+  color: #2ab2af;
+  margin-top: 10px;
+}
+
+body .card .description .text-primary {
+  color: #c0df34;
+  font-weight: 700;
+}
+
+body .card .description .text-secondary {
+  line-height: 1.8;
+  color: #98a6bd;
+  margin-bottom: 10px;
+}
+
+body .card .monthly-payment {
+  background-color: #2ab2af;
+}
+
+body .card .monthly-payment .head-title {
+  color: white;
+}
+
+body .card .monthly-payment .price-per-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-bottom: 10px;
+}
+
+body .card .monthly-payment .price-per-month #price-number {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+body .card .monthly-payment .price-per-month #period-of-time {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.507);
+  margin: 0;
+  margin-left: 15px;
+}
+
+body .card .monthly-payment .text-secondary {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+body .card .monthly-payment .sign-up-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+body .card .monthly-payment .sign-up-button .button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  background-color: #c0df34;
+  width: 100%;
+  padding: 15px 0px;
+  margin: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+body .card .monthly-payment .sign-up-button .button:hover {
+  color: #98a6bd;
+}
+
+body .card .monthly-payment .sign-up-button .button:active {
+  background-color: #d9f55c;
+}
+
+body .card .why-us {
+  background-color: #52bcba;
+}
+
+body .card .why-us .head-title {
+  color: white;
+}
+
+body .card .why-us .why-us-box {
+  text-align: left;
+}
+
+body .card .why-us .why-us-box .text-secondary {
+  color: #e5eff5;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+body .attribution {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  font-size: 13px;
+  color: #2ab2af;
+}
+
+body .attribution a {
+  color: #98a6bd;
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  body .monthly-payment #price-number {
+    font-size: 19px;
+  }
+  body .monthly-payment .text-secondary {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  body .card {
+    width: 70%;
+    margin: 10% auto;
+  }
+  body .card .description, body .card .monthly-payment, body .card .why-us {
+    padding: 25px 30px;
+  }
+  body .card .description .head-title, body .card .description .text-primary {
+    margin-bottom: 10px;
+  }
+  body .card .row-grid-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .card .row-grid-box .monthly-payment, body .card .row-grid-box .why-us {
+    width: 100%;
+    padding: 35px 40px;
+  }
+  body .card .row-grid-box .monthly-payment .head-title, body .card .row-grid-box .why-us .head-title {
+    font-size: 15px;
+  }
+  body .card .row-grid-box .monthly-payment .text-secondary {
+    font-size: 13px;
+  }
+  body .card .row-grid-box .monthly-payment .button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body .card {
+    width: 60%;
+    margin: 10% auto;
+  }
+  body .card .description, body .card .monthly-payment, body .card .why-us {
+    padding: 25px 30px;
+  }
+  body .card .description .head-title, body .card .description .text-primary {
+    margin-bottom: 10px;
+  }
+  body .card .row-grid-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .card .row-grid-box .monthly-payment, body .card .row-grid-box .why-us {
+    width: 100%;
+    padding: 35px 40px;
+  }
+  body .card .row-grid-box .monthly-payment .head-title, body .card .row-grid-box .why-us .head-title {
+    font-size: 19px;
+  }
+  body .card .row-grid-box .monthly-payment .text-secondary {
+    font-size: 15px;
+  }
+  body .card .row-grid-box .monthly-payment .button {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .card {
+    width: 40%;
+    margin: 10% auto;
+  }
+  body .card .description, body .card .monthly-payment, body .card .why-us {
+    padding: 25px 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

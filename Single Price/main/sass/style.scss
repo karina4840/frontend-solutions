@@ -1,0 +1,253 @@
+@import 'variables';
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightGray;
+    font-family: $font;
+
+    .card {
+        width: 85%;
+        margin: 15% auto;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        overflow: hidden;
+    // ---- SETTING UP COMMON STYLES ----
+        .description, .monthly-payment, .why-us {
+            padding: 20px 25px;
+            width: auto;
+
+            .head-title, .text-primary, .text-secondary {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .head-title {
+                font-size: $parBig; 
+                font-weight: bold;
+            }
+            .text-primary {
+                font-size: $parMid;
+            }
+            .text-secondary {
+                font-size: $parSmall;
+            }
+        }
+    // ---- WHITE 'JOIN' SECTION ----
+        .description {
+            background-color: white;
+
+            .head-title {
+                color: $cyan;
+                margin-top: 10px;
+            }
+            .text-primary {
+                color: $brigntYellow;
+                font-weight: 700;
+            }
+            .text-secondary {
+                line-height: 1.8;
+                color: $grayishBlue;
+                margin-bottom: 10px;
+            }
+        }
+    // ---- CYAN 'PAYMENT' SECTION ----
+        .monthly-payment {
+            background-color: $cyan;
+            .head-title {
+                color: $white;
+            }
+            .price-per-month {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                align-content: flex-start;
+                margin-bottom: 10px;
+
+                #price-number {
+                    font-size: $parHuge;
+                    color: $white;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                #period-of-time {
+                    font-size: $parMid;
+                    color: rgba(255, 255, 255, 0.507);
+                    margin: 0;
+                    margin-left: 15px;
+                }
+
+            }
+            .text-secondary {
+                font-size: $parMid;
+                color: $white;
+                margin-bottom: 30px;
+            }
+            .sign-up-button {
+                display: flex;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 5px;
+                .button {
+                    cursor: pointer;
+                    font-weight: 700;
+                    font-size: $parMid;
+                    color: $white;
+                    background-color: $brigntYellow;
+                    width: 100%;
+                    padding: 15px 0px; 
+                    margin: 0;
+                    border-radius: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                    &:hover {
+                        color: $grayishBlue;
+                    }
+                    &:active {
+                        background-color: $yellow;
+                    }
+                }
+            }
+        }
+    // ---- TURQUOISE 'WHY US' SECTION ----       
+        .why-us{
+            background-color: $turquoise;
+            .head-title {
+                color: white;
+            }
+            .why-us-box {
+                text-align: left;
+                .text-secondary {
+                    color: $lightGray;
+                    line-height: 1.5;
+                    margin-bottom: 10px;
+                }
+            }
+            
+        }
+    }
+
+    .attribution {
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: $parSmall;
+        color: $cyan;
+        
+        a {
+            color: $grayishBlue;
+            text-decoration: none;
+        }
+    }  
+}
+
+// ---- MEDIA QUERIES FOR DIFFERENT SCREEN SIZES ----
+body { 
+    // ---- MOBILE SCREEN 375PX AND BELOW ----
+    @media (max-width: $mobileMid) {
+        .monthly-payment {
+            #price-number {
+                font-size: $parBig;
+                }
+            .text-secondary {
+                font-size: $parSmall;
+            }        
+        }
+    }
+    // ---- DESKTOP SCREEN BETWEEN 700PX AND 1000PX ----
+    @media (min-width: $desktopSmall) 
+    and (max-width: $desktopBig) {
+        .card {
+            width: 70%;
+            margin: 10% auto;
+            .description, .monthly-payment, .why-us {
+                padding: 25px 30px;
+            }
+            .description{
+                .head-title, .text-primary {
+                    margin-bottom: 10px;
+                }
+            }
+            .row-grid-box {
+                display: flex;
+                flex-direction: row;
+                .monthly-payment, .why-us {
+                    width: 100%;
+                    padding: 35px 40px;
+                    .head-title {
+                        font-size: $parMid;
+                    }
+                    
+                }
+                .monthly-payment {
+                    .text-secondary {
+                        font-size: $parSmall;
+                    }
+                    .button {
+                        font-size: $parSmall;
+                    }
+                }
+            }
+        }
+    }
+    // ---- DESKTOP SCREEN 1000PX AND ABOVE ----
+    @media (min-width: $desktopBig) {
+        .card {
+            width: 60%;
+            margin: 10% auto;
+            .description, .monthly-payment, .why-us {
+                padding: 25px 30px;
+            }
+            .description{
+                .head-title, .text-primary {
+                    margin-bottom: 10px;
+                }
+            }
+            .row-grid-box {
+                display: flex;
+                flex-direction: row;
+                .monthly-payment, .why-us {
+                    width: 100%;
+                    padding: 35px 40px;
+                    .head-title {
+                        font-size: $parBig;
+                    }
+                    
+                }
+                .monthly-payment {
+                    .text-secondary {
+                        font-size: $parMid;
+                    }
+                    .button {
+                        font-size: $parMid;
+                    }
+                }
+            }
+        }
+    }
+    // ---- DESKTOP SCREEN 1200PX AND ABOVE ----
+    @media (min-width: $desktopHuge) {
+        .card {
+            width: 40%;
+            margin: 10% auto;
+            .description, .monthly-payment, .why-us {
+                padding: 25px 30px;
+            }
+        }
+    }
+}
+
+
+    
+        
+    

@@ -1,0 +1,27 @@
+// ------- FONT NAME AND SIZES -------
+$font: 'Karla', sans-serif;
+$parSmall: 13px;
+$parMid: 15px;
+$parBig: 19px;
+$parHuge: 30px;
+
+// ------- COLOR VARS -------
+// PRIMARY
+$cyan:hsl(179, 62%, 43%);
+$turquoise:hsl(179, 44%, 53%);
+$brigntYellow:hsl(71, 73%, 54%);
+$yellow:hsl(71, 88%, 66%);
+// SECONDARY
+$lightGray:hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+$white: hsl(0, 0%, 100%);
+
+// ------- BREAKPOINTS -------
+// DESKTOP 
+$desktopSmall: 700px;
+$desktopBig: 1000px;
+$desktopHuge: 1200px;
+// MOBILE 
+$mobileBig: 400px;
+$mobileMid: 375px;
+$mobileSmall: 325px;

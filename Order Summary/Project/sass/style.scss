@@ -1,0 +1,386 @@
+@import 'variables';
+
+
+html {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $paleBlue;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: $parMid;    
+    font-family: $font;
+
+    .card { 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem; 
+        border-radius: 1.5em;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 15px 25px hsla(244, 25%, 67%, 0.466);
+        
+        .hero {
+            margin: 0;
+        }
+        .hero-image {
+            width: 100%;
+            display: block;
+        }
+        .summary {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            .summary-title {
+                color: $darkBlue;
+                font-size: 25px;
+                font-weight: 900;
+                margin-top: 2rem;
+            }
+
+            .description {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                color: $desaturatedBlue;
+                font-weight: 500;
+                line-height: 1.7;
+                font-size: 15px;
+            }
+        }
+    
+        .wrapper-big-section { 
+            margin: 0.7rem auto;
+            padding: 7px 0;
+            width: 85%;
+            height: 100%;
+            border-radius: 10px;
+            border: none;
+            background-color: $veryPaleBlue;
+            display: flex;
+            flex-direction: grid;
+            justify-content: space-around;
+            align-items: center;
+        
+            .music-icon {
+                height: 50px;
+                width: 50px;
+                margin: 10px 15px;            
+            }
+
+            .wrapper-small { 
+                margin: 0;
+                width: 100%;                
+                display: flex;
+                flex-direction:column;
+                line-height: 1.7;
+                justify-content: left;
+                font-size: 14px;
+
+                .annual-plan {
+                    color: $darkBlue;
+                    font-weight: 900;
+                }
+
+                .annual-cost {
+                    color: $desaturatedBlue;
+                    font-weight: 500;
+                }
+            }
+
+            .change-link {
+                margin: 0 15px 0 15px;                
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 700;
+                text-decoration: underline;
+                justify-content: right;
+            }    
+
+            a:link, a:visited{
+                color: $brigntBlue;
+            }
+            a:hover, a:active {
+                color: $purpleLink;
+                text-decoration: none;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            .primary-button { 
+                width: 85%;
+                padding: 15px 0px;
+                margin: 10px auto;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0px 15px 25px hsla(245, 74%, 60%, 0.349);
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                outline: none;
+                background-color: $brigntBlue;
+                font-size: $parMid;
+                color: $veryPaleBlue;
+                font-weight: 700;
+                text-decoration: none;
+
+                    &:hover {
+                    background-color: $buttonHover;
+                    color: $veryPaleBlue;
+                    text-decoration: none;
+                    }
+            }
+            
+            .secondary-button {
+                text-decoration: none;
+                color: $desaturatedBlue;
+                font-weight: 700;
+                cursor: pointer;
+                margin-top: 10px;
+                    
+                    &:hover {
+                    color: $darkBlue;
+                    }
+            }
+        }
+    }
+    
+    .attribution {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        } 
+        
+    a {
+        text-decoration: none;
+        color: $purpleLink;
+    }      
+}
+
+
+// media queries for different size screens
+body {
+    // ------- DESKTOPS -------
+    // desktop size 700px and below
+    @media (max-width: $desktopSmall) {
+        background-image: $bgDesktop;
+        
+        .card {
+            width: 70%;
+        }
+
+    }
+    // desktop size between 700px and 1000px
+    @media (min-width: $desktopSmall) 
+    and (max-width: $desktopBig) {
+
+        background-image: $bgDesktop;
+        
+        .card {
+            width: 35%;
+
+            .summary { 
+                .summary-title {
+                    font-size: 22px;
+                    font-weight: 900;
+                    margin-top: 1.7rem;
+                }    
+
+                .description {
+                    line-height: 1.7;
+                    font-size: $parSmall;
+                }
+            }
+
+            .wrapper-big-section{
+
+                .music-icon{
+                    height: 40px;
+                    width: 40px;
+                }
+        
+                .wrapper-small, .change-link {
+                    font-size: $parSmall;
+                }
+            }
+
+            .buttons {
+                .primary-button, .secondary-button {
+                    font-size: $parSmall;
+
+                }
+            }
+  
+        }
+    }
+    // desktop size between 1000px and 1200px
+    @media (min-width: $desktopBig) 
+    and (max-width: $desktopHuge) {
+        background-image: $bgDesktop;
+        
+        .card {
+            width: 35%;
+
+            .summary { 
+                .summary-title {
+                    font-size: 25px;
+                    font-weight: 900;
+                    margin-top: 1.7rem;
+                }    
+
+                .description {
+                    line-height: 1.7;
+                    font-size: $parMid;
+                }
+            }
+
+            .wrapper-big-section{
+
+                .music-icon{
+                    height: 40px;
+                    width: 40px;
+                }
+        
+                .wrapper-small, .change-link {
+                    font-size: $parMid;
+                }
+            }
+
+            .buttons {
+                .primary-button, .secondary-button {
+                    font-size: $parMid;
+                    margin: 10px auto;
+                }
+            }
+  
+        }
+    }
+    // desktop size between 1200px and above
+    @media (min-width: $desktopHuge) {
+        background-image: $bgDesktop;
+        
+        .card {
+            width: 30%;
+
+            .summary { 
+                .summary-title {
+                    font-size: 27px;
+                    font-weight: 900;
+                    margin-top: 1.7rem;
+                }    
+
+                .description {
+                    line-height: 1.7;
+                    font-size: $parBig;
+                }
+            }
+
+            .wrapper-big-section{
+
+                .music-icon{
+                    height: 50px;
+                    width: 50px;
+                }
+        
+                .wrapper-small, .change-link {
+                    font-size: $parBig;
+                }
+            }
+
+            .buttons {
+                .primary-button, .secondary-button {
+                    font-size: $parBig;
+                    margin: 20px auto;
+                }
+            }
+  
+        }
+    }
+
+    // ------- MOBILE -------
+    // mobile size between 400px and below
+    @media (max-width: $mobileBig) {
+        background-image: $bgMobile;
+        width: 100%;
+        
+        .card {
+            width: 85%;
+
+            .summary { 
+                .summary-title {
+                    font-size: 20px;
+                    font-weight: 900;
+                    margin-top: 1.7rem;
+                }
+            }
+        }
+    }
+    // mobile size between 325px and below
+    @media (max-width: $mobileVSmall) {
+        background-image: $bgMobile;
+        width: 100%; 
+        
+        .card {
+            width: 85%;
+
+            .summary { 
+                .summary-title {
+                    font-size: 18px;
+                }
+                .description {
+                    font-size: $parSmall;
+                }
+            }
+
+            .wrapper-big-section{
+        
+                .wrapper-small, .change-link {
+                    font-size: $parSmall;
+                }
+                .change-link {
+                    margin-left: 15px;
+                }
+            }
+
+            .buttons {
+                .primary-button, .secondary-button {
+                    font-size: $parSmall;
+
+                }
+            }
+        }
+        .attribution {
+            font-size: 10px;
+        }
+    }
+}
